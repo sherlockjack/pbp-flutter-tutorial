@@ -243,18 +243,22 @@ class _MyFormPageState extends State<MyFormPage> {
                                       top: 20, bottom: 20),
                                   shrinkWrap: true,
                                   children: <Widget>[
-                                    Center(child: const Text('Informasi Data')),
-                                    SizedBox(height: 20),
-                                    // TODO: Munculkan informasi yang didapat dari form
-                                    Center(
-                                        child: Text(
-                                            'Nama lengkap: $_namaLengkap')),
-                                    SizedBox(height: 20),
+                                    const Center(child: Text('Informasi Data')),
+                                    const SizedBox(height: 20),
+                                    // Munculkan informasi yang didapat dari form
+                                    Text('Nama Lengkap: $_namaLengkap'),
+                                    Text('Jenjang Sarjana: $jenjangSarjana'),
+                                    Text('Jenjang Diploma: $jenjangDiploma'),
+                                    Text('Jenjang Magister: $jenjangMagister'),
+                                    Text('Jenjang Doktor: $jenjangDoktor'),
+                                    Text('Umur: $umur'),
+                                    Text('Kelas PBP: $kelasPBP'),
+                                    Text('Practice Mode: $_nilaiSwitch'),
                                     TextButton(
                                       onPressed: () {
                                         Navigator.pop(context);
                                       },
-                                      child: Text('Kembali'),
+                                      child: const Text('Kembali'),
                                     ),
                                   ],
                                 ),
